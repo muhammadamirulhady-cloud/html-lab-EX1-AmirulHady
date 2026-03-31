@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Amirul Hady</title>
+</head>
+
+<body>
+
+<header><h1>Contact</h1></header>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required maxlength="60"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="60"><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="range">Satisfaction:</label>
+            <input type="range" id="range" name="satisfaction" min="1" max="10"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Subject</legend>
+
+            <label for="subject">Choose:</label>
+            <select id="subject">
+                <optgroup label="General">
+                    <option>Inquiry</option>
+                    <option>Feedback</option>
+                </optgroup>
+                <optgroup label="Work">
+                    <option>Job Offer</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>Skills:</p>
+            <input type="checkbox" name="skill" value="HTML"> HTML
+            <input type="checkbox" name="skill" value="Java"> Java
+            <input type="checkbox" name="skill" value="Python"> Python
+
+            <p>Gender:</p>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </fieldset>
+
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" placeholder="Enter message" style="font-size:14px; padding:5px;"></textarea><br><br>
+
+        <button type="submit" style="background-color:blue; color:white; padding:10px;">Submit</button>
+
+    </form>
+</section>
+
+</body>
+</html>
