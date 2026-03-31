@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap');
+
+/* ROOT VARIABLES */
+:root {
+    --color-primary: #1e293b;
+    --color-secondary: #334155;
+    --color-accent: #3b82f6;
+    --color-accent2: #f59e0b;
+    --color-light: #f8fafc;
+    --color-gray: #64748b;
+    --color-dark: #0f172a;
+    --font-body: 'Poppins', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --space-sm: 0.5rem;
+    --space-md: 1.5rem;
+    --space-lg: 3rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, p {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #1e293b;
+}
+
+header {
+    font-family: var(--font-heading);
+    background: var(--color-primary);
+}
