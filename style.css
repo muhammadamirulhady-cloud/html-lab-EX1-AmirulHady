@@ -9,29 +9,24 @@
     --color-light: #f8fafc;
     --color-gray: #64748b;
     --color-dark: #0f172a;
-    --font-body: 'Poppins', sans-serif;
-    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lora', serif;;
+    --font-heading: 'Playfair Display', serif;
     --space-sm: 0.5rem;
     --space-md: 1.5rem;
     --space-lg: 3rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-}
-
-h1, h2, h3, h4, p {
-    font-size: 2rem;
-    line-height: 2rem;
-    color: #1e293b;
-}
-
-header {
-    font-family: var(--font-heading);
-    background: var(--color-primary);
 }
