@@ -220,3 +220,47 @@ header .image img {
     object-fit: cover;
     border-radius: 50%;
 }
+
+/* --- TASK 4 START --- */
+
+/* 1. RESPONSIVE CARD GRID (index.html) */
+.page-cards {
+    display: grid;
+    /* Requirement: auto-fit and minmax so cards wrap automatically */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* Requirement: at least 1.5rem gap */
+    gap: 2rem; 
+    /* Requirement: match heights visually */
+    grid-template-rows: auto; 
+    align-items: stretch;
+    margin-bottom: var(--space-lg);
+}
+
+/* 2. CARD STYLING & HOVER EFFECT */
+.card {
+    background-color: white;
+    padding: var(--space-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Requirement: transition for transform */
+    transition: transform 0.2s;
+}
+
+/* Requirement: Lift effect on hover */
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* 3. GRID SPANNING */
+/* Requirement: make at least one element span the full width (e.g., a featured card) */
+.featured-card {
+    grid-column: span 2;
+}
+
+/* 4. TWO-COLUMN SIDEBAR LAYOUT (about.html or skills.html) */
+/* Apply this class to the <main> or a container wrapper */
+.grid-container-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 280px; /* Requirement */
+    gap: 1.5rem; /* Requirement */
+}
