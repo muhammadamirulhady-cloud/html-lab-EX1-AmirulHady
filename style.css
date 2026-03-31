@@ -159,3 +159,64 @@ button {
     background-color: var(--color-accent);
     color: var(--color-light);
 }
+
+/*TASK 3*/
+nav {
+    display: flex;
+    justify-content: space-between; /* Site name/logo left, links right */
+    align-items: center;
+    /* Apply position: sticky */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-secondary);
+    padding: var(--space-sm) var(--space-md);
+}
+
+nav ul.nav-links {
+    display: flex;        /* This stops the links from stacking */
+    flex-wrap: wrap;     /* Requirement: wrap naturally on narrow screens */
+    gap: 1rem;           /* Requirement: use gap */
+    margin: 0;
+    padding: 0;
+    list-style: none;    /* Removes bullet points */
+}
+
+nav ul.nav-links li a {
+    text-decoration: none;
+    color: var(--color-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    /* Requirement: transition color and background-color */
+    transition: color 0.2s, background-color 0.2s;
+}
+
+nav ul.nav-links li a:hover {
+    /* Requirement: hover must change both */
+    color: var(--color-primary);
+    background-color: var(--color-light);
+}
+
+nav ul.nav-links li a.active {
+    border-bottom: 3px solid var(--color-accent);
+}
+
+header {
+    display: flex;
+    align-items: center; /* Requirement: align-items center */
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: var(--space-md);
+    color: var(--color-light);
+}
+
+header .text {
+    flex: 1; 
+}
+
+header .image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
