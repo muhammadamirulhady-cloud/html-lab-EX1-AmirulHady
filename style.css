@@ -17,7 +17,7 @@ desktop: @media (min-width: 1024px)
     --color-light: #f8fafc;
     --color-gray: #64748b;
     --color-dark: #0f172a;
-    --font-body: 'Lora', serif;;
+    --font-body: 'Lora', serif;
     --font-heading: 'Playfair Display', serif;
     --space-sm: 0.5rem;
     --space-md: 1.5rem;
@@ -55,7 +55,7 @@ img {
 h1 { 
     font-size: 3.2rem; 
     line-height: 1.2; 
-    color: #ffffff;
+    color: var(--color-light);
     margin-bottom: var(--space-md);
 }
 
@@ -117,7 +117,7 @@ caption {
 
 header {
     background-color: var(--color-primary);
-    color: #ffffff;
+    color: var(--color-light);
     padding: var(--space-md);
 }
 
@@ -157,6 +157,14 @@ nav a:hover {
 
 nav a:active {
     color: var(--color-accent2);
+}
+
+nav a:focus, 
+button:focus, 
+input:focus, 
+textarea:focus {
+    outline: 3px solid var(--color-accent2);
+    outline-offset: 2px;
 }
 
 section {
@@ -385,7 +393,7 @@ blockquote::before {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #e2e8f0;
+    background-color: var(--color-gray);
 }
 
 tbody tr:nth-child(odd) {
@@ -462,7 +470,7 @@ tbody tr:nth-child(odd) {
 
 .featured-card {
     border: 2px solid var(--color-accent);
-    background-color: #f0f7ff; 
+    background-color: var(--color-light); 
 }
 
 .featured-card .profile-feature-img {
@@ -509,6 +517,6 @@ tbody tr:nth-child(odd) {
 }
 
 .logo {
-    color: #ffffff;
+    color: var(--color-light);
     font-weight: bold;
 }
